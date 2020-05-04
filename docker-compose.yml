@@ -1,0 +1,13 @@
+version: '3'
+services:
+  gac-ui-ts:
+    command: bash -c "./script/private/welcome.sh ; bash"
+    image: gac-ui-ts:latest
+    ports:
+      - "8033:8033"
+      - "9230:9230"
+    volumes:
+      - ./:/gac-ui-ts:cached
+      - /gac-ui-ts/node_modules
+      # uncomment the following to use local libraries:
+      # - ./../carbon/lib:/gac-ui-ts/node_modules/carbon-react/lib:cached

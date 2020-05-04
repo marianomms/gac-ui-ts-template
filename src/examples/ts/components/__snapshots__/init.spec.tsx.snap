@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Init /> renders the component 1`] = `
+<AppWrapper
+  className="add-transactions-page"
+>
+  <Heading
+    divider={true}
+    helpLink="foo"
+    separator={false}
+    subheader="subheader, I am"
+    title="I'm the title"
+  />
+  <p>
+    baz
+  </p>
+  <p
+    className="red"
+  >
+    initial value in the state
+  </p>
+  <p>
+    <Button
+      as="secondary"
+      destructive={false}
+      disabled={false}
+      iconPosition="before"
+      onClick={[Function]}
+      size="medium"
+      styleOverride={
+        Object {
+          "icon": Object {},
+          "root": Object {},
+        }
+      }
+      subtext=""
+    >
+      Change text
+    </Button>
+  </p>
+</AppWrapper>
+`;
